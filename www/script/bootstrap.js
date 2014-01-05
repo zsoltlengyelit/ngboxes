@@ -1,10 +1,9 @@
 define([
     'require',
     'angular',
-//    'angular.route',
-//    'angular.animate',
     'app',
-    'jquery'
+    'jquery',
+    'semantic'
 ], function (require, ng) {
     'use strict';
 

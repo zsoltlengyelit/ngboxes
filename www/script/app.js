@@ -2,6 +2,7 @@ define([
     'angular',
     'angular.route',
     'angular.animate',
+    'angular.http-auth',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -12,6 +13,7 @@ define([
     var app = ng.module('app', [
         'ngRoute',
         'ngAnimate',
+        'http-auth-interceptor',
         'app.services',
         'app.controllers',
         'app.filters',
@@ -33,6 +35,12 @@ define([
                     redirectTo: '/index'
                 });
         }]);
+
+    app.run(function(){
+
+        $('#login').modal();
+
+    });
 
     return app;
 });

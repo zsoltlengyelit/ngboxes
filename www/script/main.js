@@ -5,7 +5,9 @@ require.config({
         'angular' : '../components/angular/angular',
         'angular.route' : '../components/angular-route/angular-route',
         'angular.animate' : '../components/angular-animate/angular-animate',
-        'jquery' : '../components/jquery/jquery'
+        'angular.http-auth' : '../components/angular-http-auth/src/http-auth-interceptor',
+        'jquery' : '../components/jquery/jquery',
+        'semantic' : '../components/semantic/build/packaged/javascript/semantic'
     },
 
     shim : {
@@ -18,8 +20,14 @@ require.config({
         'angular.animate' : {
             deps : ['angular']
         },
+        'angular.http-auth' : {
+            deps : ['angular']
+        },
         'jquery' : {
             exports : 'jQuery'
+        },
+        'semantic' : {
+            deps : ['jquery']
         }
     },
 
