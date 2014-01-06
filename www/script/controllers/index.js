@@ -2,12 +2,44 @@ define(['angular'], function (ng) {
     'use strict';
     var module = ng.module('app.controllers', []);
 
-    module.controller('IndexCtrl', ['$scope', function ($scope) {
+    module.controller('MenuCtrl', function($scope, $http, $route){
+        $scope.logout = function(){
+            $http.get('http://localhost/ngserver/index.php/logout')
+                .success(function () {
+                    $route.reload();
+                });
+        };
+    });
 
-    }]);
+    module.controller('UserCtrl', function ($scope, User, $route) {
+        $scope.users = User.query();
+
+        $scope.delete = function(user){
+            user.$remove(function(){
+                $route.reload();
+            });
+        };
+    });
+
+    module.controller('UserFormCtrl', function($scope, User, $location, $routeParams){
+
+        var userId = $routeParams.userId;
+        if(userId){
+            $scope.user = User.get({userId: userId});
+        }else{
+            $scope.user = new User();
+        }
+
+        $scope.save = function(){
+            this.user.$save(function(){
+                $location.path('/index');
+            });
+        };
+
+    });
 
     // Controller for login action
-    module.controller('LoginCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+    module.controller('LoginCtrl', ['$scope', '$http', '$location', 'authService', function ($scope, $http, $location, authService) {
 
         $scope.send = function () {
 
@@ -18,12 +50,12 @@ define(['angular'], function (ng) {
 
             $http({
                 method: 'POST',
-                url: '/nglogin/server/silex/web/index.php/login',
+                url: 'http://localhost/ngserver/index.php/login',
                 data: $.param(formData),  // pass in data as strings
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
             })
                 .success(function (data, status, headers, config) {
-                    $location.path('/index');
+                    authService.loginConfirmed();
                 })
                 .error(function (data, status) {
                     alert('error' + data);

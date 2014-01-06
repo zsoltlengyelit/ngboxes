@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="/nglogin/www/" />
     <title>ANG page</title>
 
     <link href="components/semantic/build/packaged/css/semantic.css" rel="stylesheet" type="text/css"/>
@@ -14,41 +15,61 @@
     <i class="close icon"></i>
 
     <div class="header">
-        Modal Title
+        Login
     </div>
     <div class="content">
-        <form name="loginForm" ng-submit="send()">
+        <div class="form segment">
+            <form name="loginForm" ng-submit="send()">
 
-            <fieldset>
-                <legend>Login</legend>
+                <div class="field">
+                    <label>Username</label>
 
-                <div>
-                    <label for="username">Username</label>
-                    <input type="text" ng-model="username" required/>
+                    <div class="ui left labeled icon input">
+                        <input type="text" placeholder="Username" ng-model="username"/>
+                        <i class="user icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
                 </div>
+                <div class="field">
+                    <label>Password</label>
 
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" required ng-model="password"/>
+                    <div class="ui left labeled icon input">
+                        <input type="password" ng-model="password"/>
+                        <i class="lock icon"></i>
+
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <input type="submit" value="Sign in"/>
-                </div>
-
-            </fieldset>
-
-        </form>
+            </form>
+        </div>
     </div>
     <div class="actions">
         <div class="ui button">Cancel</div>
-        <div class="ui button">OK</div>
+        <div ng-click="send()" class="ui blue button">
+            Sign in
+        </div>
+    </div>
+
+</div>
+
+<div class="ui menu" ng-controller="MenuCtrl">
+    <a class="active item" ng-href="#/">
+        <i class="home icon"></i> Home
+    </a>
+
+    <div class="right menu">
+        <a href class="item" ng-click="logout()">
+            <i class="logout icon"></i> Logout
+        </a>
     </div>
 </div>
 
-
 <div id="content" class="reveal-animation view" ng-view></div>
-
 
 <script src="components/requirejs/require.js" data-main="script/main.js"></script>
 

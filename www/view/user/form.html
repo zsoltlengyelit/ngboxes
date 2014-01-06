@@ -1,0 +1,20 @@
+<div>
+
+    <form name="form" novalidate class="ui form segment">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" ng-model="user.name" required/>
+        </div>
+
+        <div class="field">
+            <label>Age</label>
+            <input type="text" ng-model="user.age" name="age" min="1" max="100" integer />
+            <span ng-show="form.age.$error.integer">This is not valid integer!</span>
+        </div>
+
+        <button class="ui blue button" ng-click="save()">Save</button>
+
+        <a ng-href="#/" class="ui button">Back</a>
+    </form>
+
+</div>

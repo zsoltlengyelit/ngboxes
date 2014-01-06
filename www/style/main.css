@@ -5,18 +5,8 @@ body {
   padding: 0;
   margin: 0;
 }
-body {
-  background: #ffffff;
-  color: #000000;
-}
 .view {
   height: 100%;
-}
-#header {
-  color: #000000;
-}
-h2 {
-  color: #000000;
 }
 /*
  The animate class is apart of the element and the ng-enter class
@@ -29,7 +19,9 @@ h2 {
   /* All other modern browsers and IE10+ */
   /* The animation preparation code */
   opacity: 0;
+  left: -100%;
   transform: translate(-100%, 0);
+  position: relative;
 }
 /*
  Keep in mind that you want to combine both CSS
@@ -39,11 +31,14 @@ h2 {
 .reveal-animation.ng-enter.ng-enter-active {
   /* The animation code itself */
   opacity: 1;
+  left: 0;
   transform: translate(0, 0);
 }
-input {
-  padding: 10px;
-  color: blue;
+.ui.form input.ng-invalid.ng-dirty {
+  background-color: #FA787E;
+}
+.ui.form input.ng-valid.ng-dirty {
+  background-color: #78FA89;
 }
 .vbox,
 .hbox {

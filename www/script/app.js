@@ -2,8 +2,10 @@ define([
     'angular',
     'angular.route',
     'angular.animate',
+    'angular.resource',
     'angular.http-auth',
     './controllers/index',
+    './factories/index',
     './directives/index',
     './filters/index',
     './services/index'
@@ -13,33 +15,34 @@ define([
     var app = ng.module('app', [
         'ngRoute',
         'ngAnimate',
+        'ngResource',
         'http-auth-interceptor',
         'app.services',
         'app.controllers',
+        'app.factories',
         'app.filters',
         'app.directives'
     ]);
 
-    app.config(['$routeProvider',
-        function ($routeProvider) {
-            $routeProvider.
-                when('/index', {
-                    templateUrl: 'view/index.html',
-                    controller: 'IndexCtrl'
-                }).
-                when('/login', {
-                    templateUrl: 'view/login.html',
-                    controller: 'LoginCtrl'
-                }).
-                otherwise({
-                    redirectTo: '/index'
-                });
-        }]);
+    app.config(function ($routeProvider, $locationProvider) {
+        //$locationProvider.html5Mode(true);
 
-    app.run(function(){
-
-        $('#login').modal();
-
+        $routeProvider.
+            when('/', {
+                templateUrl: 'view/user/index.html',
+                controller: 'UserCtrl'
+            }).
+            when('/user/new', {
+                templateUrl: 'view/user/form.html',
+                controller: 'UserFormCtrl'
+            }).
+            when('/user/edit/:userId', {
+                templateUrl: 'view/user/form.html',
+                controller: 'UserFormCtrl'
+            }).
+            otherwise({
+                redirectTo: '/'
+            });
     });
 
     return app;

@@ -1,0 +1,34 @@
+<div class="">
+
+
+    <table class="ui segment table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td ng-bind="user.name"></td>
+            <td ng-bind="user.age"></td>
+            <td>
+                <a ng-href="#/user/edit/{{user.id}}" class="ui button">Edit</a>
+
+                <a ng-click="delete(user)" class="ui red button"><i class="remove icon"></i></a>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="3">
+                <a class="ui blue labeled icon button" ng-href="#/user/new"><i class="user icon"></i> Add user</a>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+
+
+</div>
