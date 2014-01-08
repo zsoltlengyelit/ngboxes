@@ -1,14 +1,15 @@
 require.config({
 
     paths : {
-        'domReady' : '../components/requirejs-domready/domReady',
-        'angular' : '../components/angular/angular',
-        'angular.route' : '../components/angular-route/angular-route',
-        'angular.animate' : '../components/angular-animate/angular-animate',
-        'angular.resource' : '../components/angular-resource/angular-resource',
-        'angular.http-auth' : '../components/angular-http-auth/src/http-auth-interceptor',
-        'jquery' : '../components/jquery/jquery',
-        'semantic' : '../components/semantic/build/packaged/javascript/semantic'
+        'comp' : '../components',
+        'domReady' : 'comp/requirejs-domready/domReady',
+        'angular' : 'comp/angular/angular',
+        'angular.route' : 'comp/angular-route/angular-route',
+        'angular.animate' : 'comp/angular-animate/angular-animate',
+        'angular.resource' : 'comp/angular-resource/angular-resource',
+        'angular.http-auth' : 'comp/angular-http-auth/src/http-auth-interceptor',
+        'jquery' : 'comp/jquery/jquery',
+        'semantic' : 'comp/semantic/build/packaged/javascript/semantic'
     },
 
     shim : {
