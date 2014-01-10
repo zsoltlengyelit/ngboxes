@@ -20,6 +20,16 @@ function unauthorized()
     return new \Symfony\Component\HttpFoundation\Response("Unauthorized user", 401);
 }
 
+$app->before(function (\Symfony\Component\HttpFoundation\Request $req) use ($app){
+
+    if($req->attributes->get('_route') == 'POST_login') return;
+
+    $user = $app['session']->get('user');
+    if (!$user) {
+        return unauthorized();
+    }
+});
+
 class User
 {
     public $name;
@@ -33,26 +43,18 @@ class User
 }
 
 $app->get('/user', function (\Symfony\Component\HttpFoundation\Request $req) use ($app) {
+    $sql = "SELECT * FROM user";
+    $result = $app['db']->fetchAll($sql);
 
-    $user = $app['session']->get('user');
-
-    if ($user) {
-
-        $sql = "SELECT * FROM user";
-        $result = $app['db']->fetchAll($sql);
-
-        return $app->json($result);
-    }
-
-    return unauthorized();
+    return $app->json($result);
 });
 
 $app->post('/user', function (\Symfony\Component\HttpFoundation\Request $req) use ($app) {
     $name = $req->get('name');
     $age = $req->get('age');
 
-    $data = ['name' => $name, 'age'=> $age];
-    $app['db']->insert('user',$data);
+    $data = ['name' => $name, 'age' => $age];
+    $app['db']->insert('user', $data);
 
     return $app->json($data);
 });
@@ -61,23 +63,23 @@ $app->post('/user/{id}', function (\Symfony\Component\HttpFoundation\Request $re
     $name = $req->get('name');
     $age = $req->get('age');
 
-    $data = ['name' => $name, 'age'=> $age];
-    $app['db']->update('user',$data, ['id' => $id]);
+    $data = ['name' => $name, 'age' => $age];
+    $app['db']->update('user', $data, ['id' => $id]);
 
     return $app->json($data);
 });
 
-$app->delete('/user/{id}', function($id) use ($app){
+$app->delete('/user/{id}', function ($id) use ($app) {
 
-    $app['db']->delete('user', ['id' => (int) $id]);
+    $app['db']->delete('user', ['id' => (int)$id]);
 
     return $id;
 });
 
-$app->get('/user/{id}', function($id) use ($app){
+$app->get('/user/{id}', function ($id) use ($app) {
 
     $sql = "SELECT * FROM user WHERE id = ?";
-    $user = $app['db']->fetchAssoc($sql, array((int) $id));
+    $user = $app['db']->fetchAssoc($sql, array((int)$id));
 
     return $app->json($user);
 });
@@ -98,7 +100,7 @@ $app->post('/login', function (\Symfony\Component\HttpFoundation\Request $req) u
         return new \Symfony\Component\HttpFoundation\Response('OK', 200);
     }
 
-    return new \Symfony\Component\HttpFoundation\Response('Invalid', 400);
+    return new \Symfony\Component\HttpFoundation\Response('Invalid username / password', 400);
 });
 
 $app->run();

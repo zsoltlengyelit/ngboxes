@@ -19,11 +19,15 @@ define(['angular'], function (ng) {
                     var login = elem.find('#login-modal');
                     var main = elem.find('#content');
 
-                    //login.hide();
-
                     scope.$on('event:auth-loginRequired', function () {
                         login
-                            .modal('setting', {closable: false, onDeny: function(){return false;}})
+                            .modal('settings', {
+                                closable: false,
+                                onDeny: function () {
+                                    return false;
+                                }, onApprove: function () {
+                                    return false;
+                                }})
                             .modal('show');
                     });
                     scope.$on('event:auth-loginConfirmed', function () {
@@ -32,6 +36,18 @@ define(['angular'], function (ng) {
                 }
             }
         });
+
+    module.directive('ngOnkeyup', function () {
+        return {
+            restrict: 'A',
+            scope: {
+                func: '&ngOnkeyup'
+            },
+            link: function (scope, elem, attrs) {
+                elem.bind('keyup', scope.func);
+            }
+        };
+    });
 
     return module;
 });

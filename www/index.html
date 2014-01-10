@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="/nglogin/www/" />
-    <title>ANG page</title>
+    <base href="/nglogin/www/"/>
+    <title>Base application</title>
 
     <link href="components/semantic/build/packaged/css/semantic.css" rel="stylesheet" type="text/css"/>
     <link href="style/main.css" rel="stylesheet" type="text/css"/>
@@ -12,13 +12,14 @@
 
 <div id="login-modal" class="ui modal" ng-controller="LoginCtrl">
 
-    <i class="close icon"></i>
-
     <div class="header">
         Login
     </div>
     <div class="content">
-        <div class="form segment">
+        <div class="ui form">
+
+            <div class="ui red message" ng-show="errorMessage">{{errorMessage}}</div>
+
             <form name="loginForm" ng-submit="send()">
 
                 <div class="field">
@@ -49,23 +50,52 @@
         </div>
     </div>
     <div class="actions">
-        <div class="ui button">Cancel</div>
-        <div ng-click="send()" class="ui blue button">
+        <div ng-click="send()" class="ui blue fluid button">
             Sign in
         </div>
     </div>
 
 </div>
 
-<div class="ui menu" ng-controller="MenuCtrl">
-    <a class="active item" ng-href="#/">
-        <i class="home icon"></i> Home
-    </a>
 
-    <div class="right menu">
-        <a href class="item" ng-click="logout()">
-            <i class="logout icon"></i> Logout
+<div class="ui tiered menu" ng-controller="MenuCtrl">
+    <div class="menu">
+        <a class="active item" ng-href="#/">
+            <i class="home icon"></i> Users
         </a>
+        <a class="item">
+            <i class="grid layout icon"></i> List
+        </a>
+        <a class="item">
+            <i class="mail icon"></i> Messages
+        </a>
+
+        <div class="right menu">
+            <a href class="item" ng-click="logout()">
+                <i class="logout icon"></i> Logout
+            </a>
+
+            <div class="item">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search..." ng-model="applicationSearch" />
+                    <i class="search icon"></i>
+                </div>
+            </div>
+            <div class="ui dropdown item">
+                More <i class="icon dropdown"></i>
+
+                <div class="menu">
+                    <a class="item"><i class="edit icon"></i> Edit Profile</a>
+                    <a class="item"><i class="globe icon"></i> Choose Language</a>
+                    <a class="item"><i class="settings icon"></i> Account Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui sub menu">
+        <a class="active item">Search</a>
+        <a class="item">Add</a>
+        <a class="item">Remove</a>
     </div>
 </div>
 

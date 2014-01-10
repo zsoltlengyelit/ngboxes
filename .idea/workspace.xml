@@ -26,25 +26,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="31" selection-start="2067" selection-end="2073" vertical-scroll-proportion="-16.26923" vertical-offset="784" max-vertical-offset="1394">
+            <state line="79" column="93" selection-start="2445" selection-end="2445" vertical-scroll-proportion="-7.1923075" vertical-offset="1156" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/view/user/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="66" selection-start="694" selection-end="694" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="663">
+            <state line="13" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.41385767" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/page.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="534" selection-end="534" vertical-scroll-proportion="0.51311475" vertical-offset="112" max-vertical-offset="799">
+            <state line="6" column="25" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/script/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="64" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+            <state line="16" column="0" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/script/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="10" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="918">
+            <state line="27" column="10" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="form.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/form.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
+            <state line="6" column="1" selection-start="134" selection-end="134" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
@@ -95,12 +95,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/script/directives/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http-auth-interceptor.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/components/angular-http-auth/src/http-auth-interceptor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="19" selection-start="2019" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -111,26 +137,26 @@
         <option value="$PROJECT_DIR$/www/view/login.html" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/www/script/main.js" />
-        <option value="$PROJECT_DIR$/www/script/directives/index.js" />
         <option value="$PROJECT_DIR$/www/script/factories/index.js" />
-        <option value="$PROJECT_DIR$/www/script/controllers/index.js" />
         <option value="$PROJECT_DIR$/www/view/index.html" />
         <option value="$PROJECT_DIR$/less/form.less" />
         <option value="$PROJECT_DIR$/www/script/app.js" />
-        <option value="$PROJECT_DIR$/www/view/user/index.html" />
         <option value="$PROJECT_DIR$/www/view/user/form.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/less/page.less" />
+        <option value="$PROJECT_DIR$/www/script/directives/index.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/script/controllers/index.js" />
+        <option value="$PROJECT_DIR$/www/view/user/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="107" />
-    <option name="y" value="170" />
-    <option name="width" value="1500" />
-    <option name="height" value="1040" />
+    <option name="x" value="9" />
+    <option name="y" value="40" />
+    <option name="width" value="1384" />
+    <option name="height" value="985" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -322,6 +348,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-http-auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-http-auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngboxes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -422,15 +514,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="107" y="170" width="1500" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="9" y="40" width="1384" height="985" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25113124" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26779252" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33741647" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32785764" sideWeight="0.74886876" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25427508" sideWeight="0.7322075" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -463,15 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/components/angular-http-auth/src/http-auth-interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="197" selection-end="218" vertical-scroll-proportion="0.2728732" vertical-offset="0" max-vertical-offset="2125">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/script/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="14" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -482,13 +565,6 @@
     <entry file="file://$PROJECT_DIR$/www/script/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="30" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/script/directives/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="98" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
@@ -514,16 +590,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/script/factories/index.js">
+    <entry file="file://$PROJECT_DIR$/www/view/user/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="74" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="10" column="29" selection-start="292" selection-end="292" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/script/controllers/index.js">
+    <entry file="file://$PROJECT_DIR$/less/page.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+        <state line="6" column="25" selection-start="97" selection-end="97" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
@@ -535,37 +611,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/view/user/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="292" selection-end="292" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/form.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+        <state line="6" column="1" selection-start="134" selection-end="134" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/view/user/index.html">
+    <entry file="file://$PROJECT_DIR$/www/script/factories/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="66" selection-start="694" selection-end="694" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="663">
+        <state line="7" column="74" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/components/angular-http-auth/src/http-auth-interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="19" selection-start="2019" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/script/directives/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="31" selection-start="2067" selection-end="2073" vertical-scroll-proportion="-16.26923" vertical-offset="784" max-vertical-offset="1394">
+        <state line="79" column="93" selection-start="2445" selection-end="2445" vertical-scroll-proportion="-7.1923075" vertical-offset="1156" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/page.less">
+    <entry file="file://$PROJECT_DIR$/www/script/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="534" selection-end="534" vertical-scroll-proportion="0.51311475" vertical-offset="112" max-vertical-offset="799">
+        <state line="16" column="0" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/view/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.41385767" vertical-offset="0" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
