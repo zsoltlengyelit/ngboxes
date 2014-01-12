@@ -4,7 +4,7 @@
     <list default="true" id="5c601022-9ae3-4726-8132-f28dc338aec2" name="Default" comment="" />
     <ignored path="silex.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="5c601022-9ae3-4726-8132-f28dc338aec2" time="1389302379921" ignored="false" />
+    <file path="/index.php" changelist="5c601022-9ae3-4726-8132-f28dc338aec2" time="1389520680910" ignored="false" />
     <file path="/db.php" changelist="5c601022-9ae3-4726-8132-f28dc338aec2" time="1389036264090" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="86" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.7924298">
+            <state line="25" column="71" selection-start="819" selection-end="819" vertical-scroll-proportion="0.42183623">
               <folding />
             </state>
           </provider>
@@ -303,7 +303,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="86" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.7924298">
+        <state line="25" column="71" selection-start="819" selection-end="819" vertical-scroll-proportion="0.42183623">
           <folding />
         </state>
       </provider>

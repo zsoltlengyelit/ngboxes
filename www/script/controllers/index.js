@@ -2,9 +2,9 @@ define(['angular'], function (ng) {
     'use strict';
     var module = ng.module('app.controllers', []);
 
-    module.controller('MenuCtrl', function ($scope, $http, $route, $rootScope) {
+    module.controller('MenuCtrl', function ($scope, $http, $route, $rootScope, apiUrl) {
         $scope.logout = function () {
-            $http.get('http://localhost/ngserver/index.php/logout')
+            $http.get(apiUrl + 'logout')
                 .success(function () {
                     $route.reload();
                 });
@@ -22,7 +22,7 @@ define(['angular'], function (ng) {
             $scope.searchText = text;
         });
 
-        $scope.delete = function (user) {
+        $scope.remove = function (user) {
             user.$remove(function () {
                 $route.reload();
             });
@@ -47,7 +47,7 @@ define(['angular'], function (ng) {
     });
 
     // Controller for login action
-    module.controller('LoginCtrl', function ($scope, $http, $location, authService, $rootScope, $timeout) {
+    module.controller('LoginCtrl', function ($scope, $http, $location, authService, $rootScope, $timeout, apiUrl) {
 
             $scope.send = function () {
 
@@ -60,14 +60,14 @@ define(['angular'], function (ng) {
 
                 $http({
                     method: 'POST',
-                    url: 'http://localhost/ngserver/index.php/login',
+                    url: apiUrl + 'login',
                     data: $.param(formData),  // pass in data as strings
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
                 })
-                    .success(function (data, status, headers, config) {
+                    .success(function () {
                         authService.loginConfirmed();
                     })
-                    .error(function (data, status) {
+                    .error(function (data) {
                         $timeout(function () {
                             $scope.errorMessage = data;
                             $rootScope.$broadcast('event:auth-loginRequired');
