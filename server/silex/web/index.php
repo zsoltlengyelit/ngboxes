@@ -20,9 +20,21 @@ function unauthorized()
     return new \Symfony\Component\HttpFoundation\Response("Unauthorized user", 401);
 }
 
-$app->before(function (\Symfony\Component\HttpFoundation\Request $req) use ($app){
+$app->before(function (\Symfony\Component\HttpFoundation\Request $req) use ($app) {
 
-    if($req->attributes->get('_route') == 'POST_login') return;
+    if (substr($req->attributes->get('_route'), 0, 7) == 'OPTIONS') {
+        return new \Symfony\Component\HttpFoundation\Response('Ok', 200,
+            array(
+                'Access-Control-Allow-Origin' => '*',
+                'Access-Control-Allow-Methods' => 'GET,PUT,POST,DELETE,OPTIONS',
+                'Access-Control-Allow-Headers' => 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, X-HTTP-Method-Override, Origin'
+            ));
+    }
+});
+
+$app->before(function (\Symfony\Component\HttpFoundation\Request $req) use ($app) {
+
+    if ($req->attributes->get('_route') == 'POST_login') return;
 
     $user = $app['session']->get('user');
     if (!$user) {

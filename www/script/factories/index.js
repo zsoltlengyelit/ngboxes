@@ -8,7 +8,7 @@ define(['angular'], function (ng) {
         return $resource(apiUrl + 'user/:userId', {userId:'@id'});
     });
 
-    module.constant('apiUrl', '/nglogin/server/silex/web/index.php/');
+    module.constant('apiUrl', '../server/silex/web/index.php/');
 
     return module;
 });
